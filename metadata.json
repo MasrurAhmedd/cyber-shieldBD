@@ -1,0 +1,8 @@
+{
+  "name": "Remix SHIELD BD",
+  "description": "AI Digital Safety Guardian for Bangladesh — Before you click. Before you share. Before you pay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

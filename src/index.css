@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', 'Plus Jakarta Sans', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #060B08;
+    color: #F1F5F9;
+  }
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom dark scrollbar for sleek cyber look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060B08;
+}
+::-webkit-scrollbar-thumb {
+  background: #142217;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 255, 0, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1F3624;
+}
+
+/* Subtle cyber wireframe grid pattern */
+.bg-cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(212, 255, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 255, 0, 0.03) 1px, transparent 1px);
+}
+
+/* Corner bracket HUD styling matching reference image */
+.hud-corner-card {
+  position: relative;
+}
+.hud-corner-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+.hud-corner-card::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
